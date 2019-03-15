@@ -1,0 +1,247 @@
+* { margin: 0;padding:0}
+button:focus {outline: 0;}
+
+// FONT
+@mixin font($size,$weight){
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin padding {
+    padding-top: 40px;
+    padding-bottom: 40px;    
+}
+@mixin header_title {
+    font-size: $f26;
+    margin-bottom: 40px;
+}
+@mixin skill_title {
+    font-size: $f24;
+    padding-bottom: 10px; 
+}
+// Font-Size
+$f12: 12px;
+$f14: 14px;
+$f15: 15px;
+$f16: 16px;
+$f18: 18px;
+$f20: 20px;
+$f22: 22px;
+$f24: 24px;
+$f26: 26px;
+$f28: 28px;
+$f30: 30px;
+$f36: 36px;
+$f60: 60px;
+
+// Color
+$text-color: #555555;
+$_2light: #74b9ff;
+$white-bg: #fafafa;
+$dark-bg: #eeeeee;
+
+// Transition
+$trans: 0.4s;
+
+// Font-Weight
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+
+// BUTTON
+
+
+//BEGIN for Mobile 
+@media screen and (max-width:576px){
+    body {
+        overflow-x: hidden;
+    }
+    #navigation {
+        button.collapse-button{
+            border: 1px solid $white-bg;
+            border-radius: 0px;
+            margin-top: 5px;
+
+            span.collapse-button_bars {
+                font-size: $f20;
+                color: $white-bg;
+            }
+        }
+        #TopNav {
+            background: $white-bg;
+            width: 100%;
+            border: 1px solid $text-color;
+            border-radius: 0px;
+            margin-top: 5px;
+            ul.navbar-nav {
+                li.nav-item {
+                    a.nav-link {
+                        color: $text-color;
+                        text-align: center;
+                        padding: 10px;
+                    }
+                    a.nav-link.active {
+                        background: $_2light;
+                        color: $white-bg!important;
+                    }
+                }
+            }
+        }
+    } // End Navigation
+    #introduce {
+        padding-bottom: 15vh;
+        height: 300px;
+        .intro {
+            padding-top: 100px;
+            span {
+                font-size: $f20;
+            }
+            p.name {
+                font-size: $f36;
+                padding-bottom: 9px;
+            }
+            p.job {
+                font-size: $f14;
+                padding-bottom: 20px;
+            }
+            button.hire-bt {
+                width: 100%;
+                padding: 5px 40px;
+                font-size: $f14;
+            }
+        } // end intro
+        .ava-thumb {
+            img {
+                width: 100%;
+            }
+        }
+    } // End Introduce
+    #about-me {
+        @include padding;
+        h1.header_title {
+            @include header_title;
+        }
+        .ava-cv {
+            margin-bottom: 20px;
+        }
+        .information {
+            table.table {
+                tr {
+                    td._1st {
+                        font-weight: $semiBold!important;
+                    }
+                    td._2nd {
+                        padding-left: 10px;
+                    }
+                }
+            }
+            button.hire-bt,button.download-cv {
+                width: 100%;
+                padding: 5px 40px;
+                margin-right: 0!important;
+                a {
+                    font-size: $f14;
+                }
+            }
+            button.hire-bt {
+                margin-bottom: 10px;
+            }
+        } // end Information
+    } // end about-me
+    #skill {
+        @include padding;
+        h1.header_title {
+            @include header_title;
+        }
+        h2.skill-title {
+            @include skill_title();
+        }
+        p.skill-title_more {
+            font-size: $f14;
+        }
+        ._1line {
+            p.subjects {
+                font-size: $f16;
+            }
+            .value {
+                font-size: $f16;
+            }
+        }
+    } // end skill
+
+    
+
+    #resume {
+        @include padding;
+        h1.header_title {
+            @include header_title();
+        }
+        h2.skill-title {
+            @include skill_title();
+        }
+        p.skill-title_more {
+            font-size: $f14;
+        }
+    } // end resume
+
+    #project {
+        @include padding();
+        h1.header_title {
+            @include header_title();
+        }
+    } // end project
+
+    #contact-me {
+        @include padding();
+        h1.header_title {
+            @include header_title();
+        }
+        .__1block-info {
+            margin-bottom: 40px;
+        }
+        .form-contact {
+            margin-top: 20px;
+            p.form-row.name {
+                width: 100%;
+                margin-right: 0!important;
+                margin-bottom: 0!important;
+            }
+            p.form-row.email {
+                width: 100%;
+                margin-bottom: 0!important;
+            }
+        }
+        button.send {
+            width: 100%;
+            padding: 5px 40px;
+            margin-right: 0!important;
+            font-size: $f14;
+            margin-top: 30px;
+        }
+    } // end contact-me
+
+    footer {
+        padding: 10px 0;
+        p {
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 10px!important;
+        }
+        .social {
+            margin: auto;
+            transform: translateX(12px);
+        }
+    }
+    #navigation.bg {
+        button.collapse-button {
+            border: 1px solid $text-color!important;
+            span.collapse-button_bars {
+                color: $text-color!important;
+            }
+        }
+    }
+}
+        
+            
+       

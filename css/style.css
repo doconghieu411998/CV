@@ -1,0 +1,830 @@
+/* line 1, style.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2, style.scss */
+button:focus {
+  outline: 0;
+}
+
+/* line 39, style.scss */
+#introduce .intro button.hire-bt, #about-me .information button.hire-bt, #about-me .information button.download-cv, #contact-me button.send {
+  background: #74b9ff;
+  border-radius: 40px;
+  padding: 10px 45px;
+  border: 2px solid #74b9ff;
+  transition: 0.4s;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fafafa;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+/* line 51, style.scss */
+#introduce .intro button.hire-bt:hover, #about-me .information button.hire-bt:hover, #about-me .information button.download-cv:hover, #contact-me button.send:hover {
+  background: #fafafa;
+  border: 2px solid #74b9ff;
+  color: #74b9ff;
+}
+
+/* line 58, style.scss */
+#about-me h1.header_title, #skill h1.header_title, #experience h1.header_title, #project h1.header_title, #contact-me h1.header_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  background-image: url("../images/under-bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+/* line 68, style.scss */
+#skill h2.skill-title, #experience h2.skill-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: left;
+  background-image: url("../images/line.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 23px;
+  margin-bottom: 25px;
+}
+
+/* line 78, style.scss */
+#about-me, #skill, #experience, #project, #contact-me {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* line 83, style.scss */
+body {
+  background: #fafafa;
+  color: #555555;
+  overflow-x: hidden;
+}
+
+/* line 91, style.scss */
+#navigation #TopNav ul.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 94, style.scss */
+#navigation #TopNav ul.navbar-nav li.nav-item {
+  list-style: none;
+}
+/* line 96, style.scss */
+#navigation #TopNav ul.navbar-nav li.nav-item a.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fafafa;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.4s;
+  padding: 40px 20px;
+}
+/* line 103, style.scss */
+#navigation #TopNav ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #74b9ff !important;
+}
+/* line 107, style.scss */
+#navigation #TopNav ul.navbar-nav li.nav-item a.nav-link.active {
+  color: #74b9ff !important;
+}
+
+/* line 117, style.scss */
+#introduce {
+  background-image: url(../images/1_ZeixM2OCyy_xUEKMnSp_bQ.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 127, style.scss */
+#introduce:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.212);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+/* line 137, style.scss */
+#introduce .intro {
+  padding-top: 310px;
+}
+/* line 139, style.scss */
+#introduce .intro span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fafafa;
+  padding-bottom: 40px;
+}
+/* line 144, style.scss */
+#introduce .intro p.name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 15px;
+  margin-bottom: 0 !important;
+}
+/* line 150, style.scss */
+#introduce .intro p.job {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 45px;
+  margin-bottom: 0 !important;
+  color: #fafafa;
+}
+/* line 161, style.scss */
+#introduce .ava-thumb img {
+  width: 100%;
+}
+
+/* line 168, style.scss */
+#about-me {
+  background: #eeeeee;
+}
+/* line 174, style.scss */
+#about-me .ava-cv {
+  padding: 0 0 10px 10px;
+  border-left: 10px solid #74b9ff;
+  border-bottom: 10px solid #74b9ff;
+  overflow: hidden;
+}
+/* line 179, style.scss */
+#about-me .ava-cv img {
+  width: 100%;
+  height: 100%;
+}
+/* line 185, style.scss */
+#about-me .information span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* line 188, style.scss */
+#about-me .information p.more-infomation {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 30px 0;
+}
+/* line 192, style.scss */
+#about-me .information table.table {
+  margin-bottom: 40px;
+}
+/* line 195, style.scss */
+#about-me .information table.table tr td {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border-top: none;
+  padding: 10px 0;
+}
+/* line 200, style.scss */
+#about-me .information table.table tr td._1st {
+  padding-left: 0 !important;
+}
+/* line 205, style.scss */
+#about-me .information button.hire-bt, #about-me .information button.download-cv {
+  margin-right: 30px;
+}
+
+/* line 222, style.scss */
+#skill p.skill-title_more {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 33px;
+}
+/* line 226, style.scss */
+#skill ._1line {
+  position: relative;
+  margin-bottom: 50px;
+}
+/* line 229, style.scss */
+#skill ._1line p.subjects {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* line 232, style.scss */
+#skill ._1line .line {
+  height: 5px;
+  border-radius: 2px;
+}
+/* line 235, style.scss */
+#skill ._1line .line .line-details {
+  background-color: #74b9ff;
+}
+/* line 239, style.scss */
+#skill ._1line .value {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  color: #555555;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* line 247, style.scss */
+#skill ._1line:hover {
+  cursor: pointer;
+}
+/* line 250, style.scss */
+#skill ._1line .skill-information {
+  background: #74b9ff;
+  padding: 10px 20px;
+  border-radius: 0px;
+}
+/* line 254, style.scss */
+#skill ._1line .skill-information p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #fafafa;
+}
+/* line 261, style.scss */
+#skill ._1line:hover .skill-information {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 282, style.scss */
+#experience p.skill-title_more {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 33px;
+}
+/* line 286, style.scss */
+#experience ._1block {
+  background: #eeeeee;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+  margin-bottom: 30px;
+}
+/* line 293, style.scss */
+#experience ._1block:hover {
+  box-shadow: 0px 4px 1px 0 #00000038;
+}
+/* line 296, style.scss */
+#experience ._1block:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-bottom: 35px solid transparent;
+  border-left: 35px solid #74b9ff;
+}
+/* line 308, style.scss */
+#experience ._1block p.time {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+/* line 312, style.scss */
+#experience ._1block p.title_job {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #74b9ff;
+}
+/* line 316, style.scss */
+#experience ._1block p.detail_job {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* line 323, style.scss */
+#project {
+  background: #eeeeee;
+}
+/* line 329, style.scss */
+#project .slider {
+  position: relative;
+}
+/* line 331, style.scss */
+#project .slider ._1-prj {
+  transition: 0.4s;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+/* line 336, style.scss */
+#project .slider ._1-prj .thumbnails {
+  overflow: hidden;
+  max-height: 195px;
+}
+/* line 340, style.scss */
+#project .slider ._1-prj .thumbnails img {
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+}
+/* line 346, style.scss */
+#project .slider ._1-prj a.download {
+  display: block;
+  text-decoration: none;
+  background: #74b9ff;
+  border-radius: 2px;
+  padding: 10px 20px;
+  color: #fafafa;
+  transition: 0.4s;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  visibility: hidden;
+}
+/* line 355, style.scss */
+#project .slider ._1-prj a.download i {
+  margin-right: 10px;
+}
+/* line 361, style.scss */
+#project .slider ._1-prj a.title_prj {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #74b9ff;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px 0;
+  display: block;
+  transition: 0.4s;
+}
+/* line 370, style.scss */
+#project .slider ._1-prj p.detail_prj {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 10px;
+  padding-bottom: 40px;
+}
+/* line 375, style.scss */
+#project .slider ._1-prj:hover {
+  transform: translateY(-10px);
+  border: 1px solid #74b9ff;
+}
+/* line 378, style.scss */
+#project .slider ._1-prj:hover .thumbnails img {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+/* line 382, style.scss */
+#project .slider ._1-prj:hover a.title_prj {
+  color: #2980b9;
+}
+/* line 385, style.scss */
+#project .slider ._1-prj:hover a.download {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 400, style.scss */
+#contact-me .__1block-info {
+  margin-bottom: 75px;
+}
+/* line 402, style.scss */
+#contact-me .__1block-info img {
+  float: left;
+  padding-right: 20px;
+}
+/* line 406, style.scss */
+#contact-me .__1block-info p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 20px;
+  margin-left: 90px;
+  vertical-align: middle;
+}
+/* line 414, style.scss */
+#contact-me .form-contact .form-row {
+  display: flex;
+  flex: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/* line 420, style.scss */
+#contact-me .form-contact p.form-row.name {
+  width: 47%;
+  float: left;
+  margin-right: 6%;
+}
+/* line 425, style.scss */
+#contact-me .form-contact p.form-row.email {
+  width: 47%;
+}
+/* line 428, style.scss */
+#contact-me .form-contact input[type=text] {
+  width: 100%;
+  height: 50px;
+  padding: 17px 20px;
+  border: 1px solid #555555;
+  border-radius: 0px;
+  margin-bottom: 15px;
+}
+/* line 435, style.scss */
+#contact-me .form-contact input[type=text]:focus {
+  border: 1px solid #74b9ff;
+}
+/* line 439, style.scss */
+#contact-me .form-contact input[type='text'] {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* line 442, style.scss */
+#contact-me .form-contact textarea#text-massage {
+  width: 100%;
+  padding: 17px 20px;
+  border: 1px solid #555555;
+}
+/* line 446, style.scss */
+#contact-me .form-contact textarea#text-massage:focus {
+  border: 1px solid #74b9ff;
+}
+/* line 450, style.scss */
+#contact-me .form-contact textarea::-webkit-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* line 453, style.scss */
+#contact-me .form-contact p#noti, #contact-me .form-contact span#noti-name, #contact-me .form-contact span#noti-email {
+  color: #e74c3c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* line 458, style.scss */
+#contact-me button.send {
+  color: #fafafa;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* line 468, style.scss */
+footer {
+  background: #eeeeee;
+  padding: 20px 0;
+}
+/* line 471, style.scss */
+footer p {
+  padding-top: 5px;
+  margin-bottom: 0 !important;
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* line 477, style.scss */
+footer .social {
+  float: right;
+  margin-left: auto;
+  padding-top: 5px;
+}
+/* line 481, style.scss */
+footer .social ul {
+  list-style: none;
+}
+/* line 483, style.scss */
+footer .social ul li {
+  float: left;
+  padding-right: 40px;
+}
+/* line 486, style.scss */
+footer .social ul li a {
+  text-decoration: none;
+  color: #555555;
+  transition: 0.4s;
+  font-size: 18px;
+}
+/* line 491, style.scss */
+footer .social ul li a:hover {
+  color: #74b9ff;
+}
+
+/* line 501, style.scss */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* line 535, style.scss */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/* line 540, style.scss */
+#navigation.bg {
+  background: #fafafa;
+  border-bottom: 1px solid #555555;
+  box-shadow: 0px 1px 20px 0px #00000042;
+  margin-bottom: 0 !important;
+}
+/* line 545, style.scss */
+#navigation.bg ul {
+  margin-bottom: 0;
+}
+/* line 548, style.scss */
+#navigation.bg ul li.nav-item a.nav-link {
+  color: #555555 !important;
+  padding: 10px 20px !important;
+}
+
+/* line 1, _mobile.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2, _mobile.scss */
+button:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 576px) {
+  /* line 57, _mobile.scss */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* line 61, _mobile.scss */
+  #navigation button.collapse-button {
+    border: 1px solid #fafafa;
+    border-radius: 0px;
+    margin-top: 5px;
+  }
+  /* line 66, _mobile.scss */
+  #navigation button.collapse-button span.collapse-button_bars {
+    font-size: 20px;
+    color: #fafafa;
+  }
+  /* line 71, _mobile.scss */
+  #navigation #TopNav {
+    background: #fafafa;
+    width: 100%;
+    border: 1px solid #555555;
+    border-radius: 0px;
+    margin-top: 5px;
+  }
+  /* line 79, _mobile.scss */
+  #navigation #TopNav ul.navbar-nav li.nav-item a.nav-link {
+    color: #555555;
+    text-align: center;
+    padding: 10px;
+  }
+  /* line 84, _mobile.scss */
+  #navigation #TopNav ul.navbar-nav li.nav-item a.nav-link.active {
+    background: #74b9ff;
+    color: #fafafa !important;
+  }
+
+  /* line 92, _mobile.scss */
+  #introduce {
+    padding-bottom: 15vh;
+    height: 300px;
+  }
+  /* line 95, _mobile.scss */
+  #introduce .intro {
+    padding-top: 100px;
+  }
+  /* line 97, _mobile.scss */
+  #introduce .intro span {
+    font-size: 20px;
+  }
+  /* line 100, _mobile.scss */
+  #introduce .intro p.name {
+    font-size: 36px;
+    padding-bottom: 9px;
+  }
+  /* line 104, _mobile.scss */
+  #introduce .intro p.job {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  /* line 108, _mobile.scss */
+  #introduce .intro button.hire-bt {
+    width: 100%;
+    padding: 5px 40px;
+    font-size: 14px;
+  }
+  /* line 115, _mobile.scss */
+  #introduce .ava-thumb img {
+    width: 100%;
+  }
+
+  /* line 120, _mobile.scss */
+  #about-me {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* line 122, _mobile.scss */
+  #about-me h1.header_title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  /* line 125, _mobile.scss */
+  #about-me .ava-cv {
+    margin-bottom: 20px;
+  }
+  /* line 131, _mobile.scss */
+  #about-me .information table.table tr td._1st {
+    font-weight: 600 !important;
+  }
+  /* line 134, _mobile.scss */
+  #about-me .information table.table tr td._2nd {
+    padding-left: 10px;
+  }
+  /* line 139, _mobile.scss */
+  #about-me .information button.hire-bt, #about-me .information button.download-cv {
+    width: 100%;
+    padding: 5px 40px;
+    margin-right: 0 !important;
+  }
+  /* line 143, _mobile.scss */
+  #about-me .information button.hire-bt a, #about-me .information button.download-cv a {
+    font-size: 14px;
+  }
+  /* line 147, _mobile.scss */
+  #about-me .information button.hire-bt {
+    margin-bottom: 10px;
+  }
+
+  /* line 152, _mobile.scss */
+  #skill {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* line 154, _mobile.scss */
+  #skill h1.header_title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  /* line 157, _mobile.scss */
+  #skill h2.skill-title {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  /* line 160, _mobile.scss */
+  #skill p.skill-title_more {
+    font-size: 14px;
+  }
+  /* line 164, _mobile.scss */
+  #skill ._1line p.subjects {
+    font-size: 16px;
+  }
+  /* line 167, _mobile.scss */
+  #skill ._1line .value {
+    font-size: 16px;
+  }
+
+  /* line 175, _mobile.scss */
+  #experience {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* line 177, _mobile.scss */
+  #experience h1.header_title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  /* line 180, _mobile.scss */
+  #experience h2.skill-title {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  /* line 183, _mobile.scss */
+  #experience p.skill-title_more {
+    font-size: 14px;
+  }
+
+  /* line 188, _mobile.scss */
+  #project {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* line 190, _mobile.scss */
+  #project h1.header_title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  /* line 195, _mobile.scss */
+  #contact-me {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* line 197, _mobile.scss */
+  #contact-me h1.header_title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  /* line 200, _mobile.scss */
+  #contact-me .__1block-info {
+    margin-bottom: 40px;
+  }
+  /* line 203, _mobile.scss */
+  #contact-me .form-contact {
+    margin-top: 20px;
+  }
+  /* line 205, _mobile.scss */
+  #contact-me .form-contact p.form-row.name {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  /* line 210, _mobile.scss */
+  #contact-me .form-contact p.form-row.email {
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+  /* line 215, _mobile.scss */
+  #contact-me button.send {
+    width: 100%;
+    padding: 5px 40px;
+    margin-right: 0 !important;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  /* line 224, _mobile.scss */
+  footer {
+    padding: 10px 0;
+  }
+  /* line 226, _mobile.scss */
+  footer p {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px !important;
+  }
+  /* line 231, _mobile.scss */
+  footer .social {
+    margin: auto;
+    transform: translateX(12px);
+  }
+
+  /* line 237, _mobile.scss */
+  #navigation.bg button.collapse-button {
+    border: 1px solid #555555 !important;
+  }
+  /* line 239, _mobile.scss */
+  #navigation.bg button.collapse-button span.collapse-button_bars {
+    color: #555555 !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
